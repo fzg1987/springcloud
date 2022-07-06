@@ -1,10 +1,8 @@
 server:
-  port: 8021
+  port: 8040
 spring:
   application:
-    name: consumer
-  main:
-    allow-bean-definition-overriding: true
+    name: ribbon
 eureka:
   client:
     service-url:
