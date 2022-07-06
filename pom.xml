@@ -12,19 +12,21 @@
         <module>eurekaserver</module>
         <module>provider</module>
         <module>consumer</module>
+        <module>gateway</module>
     </modules>
     <name>springcloud</name>
 
     <parent>
         <artifactId>spring-boot-starter-parent</artifactId>
         <groupId>org.springframework.boot</groupId>
-        <version>2.1.5.RELEASE</version>
+        <version>2.7.1</version>
     </parent>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.7.1</version>
         </dependency>
 
         <!-- jdk9 -->
@@ -60,7 +62,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.SR2</version>
+                <version>2021.0.3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

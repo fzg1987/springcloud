@@ -2,6 +2,7 @@ package com.fzg.controller;
 
 import com.fzg.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
@@ -14,6 +15,12 @@ public class StudentHandler {
     @Autowired
     private RestTemplate restTemplate;
 
+    @Value("${server.port}")
+    private String port;
+    @GetMapping("/index")
+    public String index(){
+        return "consumer:" + this.port;
+    }
     @GetMapping("/findAll")
     public Collection<Student> findAll(){
         return restTemplate.getForObject("http://localhost:8010/provider/findAll",Collection.class);
