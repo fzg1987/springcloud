@@ -17,6 +17,7 @@
         <module>feign</module>
         <module>hystrix</module>
         <module>nativeconfigserver</module>
+        <module>nativeconfigclient</module>
     </modules>
     <name>springcloud</name>
 
