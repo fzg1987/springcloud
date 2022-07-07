@@ -18,6 +18,8 @@
         <module>hystrix</module>
         <module>nativeconfigserver</module>
         <module>nativeconfigclient</module>
+        <module>zipkinclient</module>
+        <module>zipkinserver</module>
     </modules>
     <name>springcloud</name>
 
